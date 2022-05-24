@@ -125,9 +125,12 @@
                   </div>
             </nav>
       </header>
-      <!-- <div id="page-home">
+      <!-- <div class="page-block">
+
+      </div> -->
+      <div id="page-banner">
             <div class="container-lg">
-                  <section class="p-5 page-banner">
+                  <section class="p-5 ">
                         <h1>HYRA Chain Testnet Explorer</h1>
                         <div class="input-group mb-3">
                               <button class="btn btn-buttom dropdown-toggle text-light" type="button"
@@ -146,313 +149,603 @@
                               <i class="fa fa-search"></i>
                         </div>
                   </section>
-                  <section class="page-chart">
+            </div>
+      </div>
+      <div id="page-block">
+            <div class="container-lg">
+                  <section>
                         <div class="row">
                               <div class="col-md-8">
-                                    <div class="column-hyra"></div>
+                                    <h2>Blocks</h2>
+                                    <p>Block <strong> #841921</strong> to <strong> #841925</strong> (Total of <strong>
+                                                1,267,611</strong> blocks)</p>
                               </div>
-                              <div class="col-md-4 column-hyra">
-                                    <div class="rate-table d-flex">
-                                          <img src="../public/img/supply.png" alt="" class="">
-                                          <div class="text-price">
-                                                <p class="title-price">Total Supply</p>
-                                                <p>5,000,000 HYRA</p>
-                                          </div>
-                                    </div>
-                                    <div class="rate-table d-flex">
-                                          <img src="../public/img/market-cap.png" alt="">
-                                          <div class="text-price">
-                                                <p class="title-price">Market Cap </p>
-                                                <p>$ 312,824,423.857</p>
-                                          </div>
-                                    </div>
-                                    <div class="rate-table d-flex">
-                                          <img src="../public/img/rewards.png" alt="">
-                                          <div class="text-price">
-                                                <p class="title-price">Total Rewards</p>
-                                                <p>$ 77,205,590</p>
-                                          </div>
-                                    </div>
-                                    <div class="rate-table d-flex">
-                                          <img src="../public/img/price.png" alt="">
-                                          <div class="text-price d-flex">
-                                                <div>
-                                                      <p class="title-price">Price</p>
-                                                      <p>$ 0.103038 <span class="badge">+2.03%</span></p>
-                                                </div>
-                                                <span class="badge-red">-1.23%</span>
-                                          </div>
-                                    </div>
-                                    <div class="rate-table d-flex">
-                                          <img src="../public/img/volume.png" alt="">
-                                          <div class="text-price">
-                                                <p class="title-price">Volume 24h</p>
-                                                <p>77,205,590 HYRA</p>
-                                          </div>
-                                    </div>
+                              <div class="col-md-4">
+                                    <nav aria-label="Page navigation example">
+                                          <ul class="pagination">
+                                                <li class="page-item"><a class="page-link m-1" href="#">First</a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">
+                                                            < </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link m-1 text-light" href="#">Page
+                                                            1 of 1234</a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">></a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">Last</a></li>
+                                          </ul>
+                                    </nav>
                               </div>
                         </div>
-                        <div class="row pt-4">
-                              <div class="column-hyra d-flex">
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Total block</h6>
-                                          <p>5,000,000</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Blocktime</h6>
-                                          <p>5,343,023</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">AVR Block time </h6>
-                                          <p>3.5s</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Live TPS </h6>
-                                          <p>2.1300</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Transactions</h6>
-                                          <p>19,030,394</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Addresses</h6>
-                                          <p>371,931</p>
-                                    </div>
-                                    <span class="boder-1"></span>
-                                    <div class="price-column">
-                                          <h6 class="title-hyra">Contracts</h6>
-                                          <p>5,773</p>
-                                    </div>
-                              </div>
+                        <div class="row table">
+                              <table>
+                                    <tr class="active">
+                                          <th>Block</th>
+                                          <th>Age</th>
+                                          <th>Txn</th>
+                                          <th>Validator</th>
+                                          <th>Gas used</th>
+                                          <th>Gas limit </th>
+                                          <th>Reward</th>
+                                          <th>Fees burnt</th>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                <p class="text-color m-0">123456</p>
+                                          </td>
+                                          <td>23 secs ago</td>
+                                          <td>
+                                                <p class="text-color m-0">150</p>
+                                          </td>
+                                          <td>
+                                                <p class="text-color m-0">Validator: Tranchess</p>
+                                          </td>
+                                          <td>
+                                                <P class="m-0">19,613,693 <span>(24.72%)</span> </P>
+                                                <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      </div>
+                                                </div>
+                                          </td>
+                                          <td>79,340377</td>
+                                          <td>0.001 HYRA</td>
+                                          <td>0.0001 HYRA </td>
+                                    </tr>
+                              </table>
                         </div>
-                        <div class="row pt-4">
+                        <div class="row
+                        
+                        
+                        
+                        
+                        
+                        ">
                               <div class="col-md-6">
-                                    <div class="column-hyra">
-                                          <h2>Latest Blocks</h2>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex blocks">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Bk</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">791,636</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>Hash <a href="#">0x842cefa8f04a73b3e...</a></p>
-                                                      <p><a href="#">123 txns</a> in 2s </p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>1.000023 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <button type="button" class="btn btn-blocks"><a href="">View all blocks</a></button>
-                                    </div>
+                                    <p>Show <input type="number" class="counter m-3" name="quantity" min="1" max="99" value="25">Records</p>
                               </div>
-                              <div class="col-md-6">
-                                    <div class="column-hyra">
-                                          <h2>Latest Transactions</h2>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <div class="row d-flex transactions">
-                                                <div class="col-md-1 mt-3">
-                                                      <span class="badge-bk">Tx</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p><a href="#">0x20a2ff54ceef...</a></p>
-                                                      <P>12 secs ago</P>
-                                                </div>
-                                                <div class="col-md-5">
-                                                      <p>From <a href="#">0x7FF1Cc4BdffAe9D887f...</a></p>
-                                                      <p>To <a href="#">0xa2872282d3d508a5...</a></p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                      <p class="ribbon"><span>0 HYRA</span></p>
-                                                </div>
-                                          </div>
-                                          <hr>
-                                          <button type="button" class="btn btn-blocks"><a href="">View all blocks</a></button>
-                                    </div>
+                              <div class="col-md-6 d-flex justify-content-end">
+                                    <nav aria-label="Page navigation example">
+                                          <ul class="pagination">
+                                                <li class="page-item"><a class="page-link m-1" href="#">First</a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">
+                                                            < </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link m-1 text-light" href="#">Page
+                                                            1 of 1234</a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">></a></li>
+                                                <li class="page-item"><a class="page-link m-1" href="#">Last</a></li>
+                                          </ul>
+                                    </nav>
                               </div>
                         </div>
                   </section>
             </div>
-      </div> -->
+      </div>
       <footer>
             <div class="container-lg">
                   <div class="logo-footer">

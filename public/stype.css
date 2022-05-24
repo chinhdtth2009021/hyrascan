@@ -106,41 +106,45 @@ header {
 background: #172932;
 color: #fff;
 }
-#page-home .page-banner .input-group{
+#page-banner {
+    background: #172932;
+    color: #fff;  
+}
+#page-banner .input-group{
     background: linear-gradient(359deg, rgb(91 176 195 / 57%) -6.56%, rgb(27 53 58 / 26%) 115.47%);
     border: 1.5px solid rgba(85, 198, 208, 0.4);
     box-shadow: 17px 0px 28px rgba(85, 198, 208, 0.15);
     border-radius: 10px;
     padding: 15px;
 }
-#page-home .page-banner .input-group i{
+#page-banner .input-group i{
     position: absolute;
     top: 23px;
     right: 20px;
 }
-#page-home .page-banner .input-group input,
-#page-home .page-banner .input-group .btn-buttom{
+#page-banner .input-group input,
+#page-banner .input-group .btn-buttom{
     background:-6.56%, rgb(35 72 80 / 26%);
     border: none;
     box-shadow: none;
     color: white;
 }
-#page-home .page-banner .input-group ul{
+#page-banner .input-group ul{
     background:  rgb(0 0 0 / 26%);
     padding: 10px;
 }
-#page-home .page-banner .input-group ul {
+#page-banner .input-group ul {
     position: absolute;
     margin: 0px;
     inset: 0px auto auto 0px;
     transform: translate(16px, 56px);  
 }
-#page-home .page-banner .input-group ul li a:hover{
+#page-banner .input-group ul li a:hover{
     background:  rgb(120 213 233 / 26%);
     border-radius: 5px;
     color: white;
 }
-#page-home .page-banner .input-group ul li a{
+#page-banner .input-group ul li a{
     color: white;
 }
 /* ======= */
@@ -196,13 +200,12 @@ color: #fff;
     border: none;
     padding: 13px;
 }
-#page-home .page-chart .column-hyra .blocks a{
-    /* overflow: auto; */
+#page-home .page-chart .column-hyra a{
     color: #01FFF0;
     text-decoration: none
 }
-#page-home .page-chart .column-hyra .blocks .ribbon {
-    width: 7%;
+#page-home .page-chart .column-hyra .ribbon {
+    width: 135px;
     height: 30px;
     border-top: 16px solid transparent;
     border-left: 25px solid #16353C;
@@ -210,12 +213,74 @@ color: #fff;
     position: absolute;
     display: block;
     background: #134448;
-    /* border: linear-gradient(344.23deg, rgba(85, 186, 208, 0.57) -6.56%); */
   }
-  #page-home .page-chart .column-hyra .blocks .ribbon span{
+  #page-home .page-chart .column-hyra .ribbon span{
       position: absolute;
       bottom: -12px;
   }
+  /* #page-home .page-chart .column-hyra  button{
+    background: #1a7f83;
+    } */
+    #page-home .page-chart .column-hyra .btn-blocks{
+      width: 100%;
+      text-align: center;
+      background: #1a7f83;
+    border-radius: 5px;
+  }
+  /* ================page-block=================== */
+  #page-block{
+    background: #172932;
+    color: #fff;
+  }
+  #page-block .pagination .page-item .page-link{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 5px;
+    border: none;
+    color: #01FFF0;
+}
+#page-block .table{
+    background: #16353C;
+    /* border: 2px solid #173943; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px;
+}
+#page-block .active{
+    background: rgba(1, 255, 240, 0.1);
+    border-radius: 10px;
+}
+#page-block tr th,
+ td{
+    padding: 20px 10px;
+}
+#page-block tr .text-color{
+    color: #01FFF0;
+    text-decoration: none;
+}
+#page-block tr {
+    border-bottom: 1px solid  #154C54;
+    border-radius: 20px;
+}
+#page-block tr span{
+    color: #C4C4C4;
+}
+#page-block tr:hover{
+    background: rgba(3, 105, 98, 0.1);
+    border-radius: 5px;
+}
+#page-block .progress{
+    height: 3px;
+}
+#page-block .progress-bar {
+    background-color: #01FFF0;
+}
+.counter{
+    border: 1px solid rgba(85, 198, 208, 0.4);
+    background: #172932;
+    color: white;
+    border-radius: 7px;
+}
   /* ===================== FOOTER =================== */
 footer {
     position: relative;
