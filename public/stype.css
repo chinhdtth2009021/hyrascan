@@ -26,10 +26,10 @@ h6 {
     position: relative;
 }
 h1,
+h2,
 h6{
     font-family: gotham-regular;
 }
-h2,
 h3,
 h4,
 h5{
@@ -149,9 +149,10 @@ color: #fff;
     box-shadow: none;
     color: white;
     border-right: 2px solid rgba(255, 255, 255, 0.7);
-    width: 10%;
+    width: 14%;
     display: flex;
     font-size: 20px;
+    opacity: 0.7;
 }
 #page-banner .input-group .btn-buttom i{
     position: absolute;
@@ -248,13 +249,13 @@ color: #fff;
 }
 #page-home .page-chart .column-hyra .ribbon {
     width: 155px;
-    height: 30px;
     border-top: 16px solid transparent;
     border-left: 25px solid #16353C;
     border-bottom: 16px solid transparent;
     position: relative;
     background: #134448;
     right: 35px;
+    border-radius: 5px;
   }
   #page-home .page-chart .column-hyra .ribbon span{
       position: absolute;
@@ -262,7 +263,7 @@ color: #fff;
   }
     #page-home .page-chart .btn-blocks{
         width: 100%;
-        background: #1a7f83;
+        background: #125D60;
         border-radius: 5px;
         box-shadow: none;
         color: #01FFF0;
