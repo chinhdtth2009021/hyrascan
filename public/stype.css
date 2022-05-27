@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
+@font-face {
+    font-family: gotham-light;
+    src: url(fonts/gotham-light.otf);
+  }
+  @font-face {
+    font-family: gotham-bold;
+    src: url(fonts/gotham-bold.otf);
+  }
+  @font-face {
+    font-family: gotham-regular;
+    src: url(fonts/gotham-regular.otf);
+  }
 body {
-    font-size: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-size: 16px;
+    font-family: gotham-light;
     overflow-x: hidden;
     color: #fff;
 }
@@ -13,7 +22,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+h1,
+h6{
+    font-family: gotham-regular;
+}
+h2,
+h3,
+h4,
+h5{
+    font-family: gotham-bold;
 }
 a,
 a:hover {
@@ -42,6 +62,7 @@ section.banner h1 {
     font-size: 48px;
     line-height: 1;
 }
+
 /*========================== HEADER ==========================*/
 header {
       background: #172932;
@@ -61,8 +82,7 @@ header {
       line-height: 1;
   }
   header .top .faq-text a {
-      font-size: 15px;
-      font-weight: 700;
+      font-family: gotham-bold;
   }
   header .navbar {
       padding: 10px 0;
@@ -73,7 +93,8 @@ header {
   }
   header .navbar .nav-link {
       color: #fff;
-      font-weight: 400;
+      /* font-weight: 400; */
+      font-family: gotham-regular;
   }
   header .navbar .dropdown-toggle::after {
       display: none;
@@ -101,6 +122,7 @@ header {
       left: 50%;
       transform: translateX(-50%);
   }
+
 /* ===================== PAGE-HOME =================== */
 #page-home {
 background: #172932;
@@ -111,8 +133,8 @@ color: #fff;
     color: #fff;  
 }
 #page-banner .input-group{
-    background: linear-gradient(359deg, rgb(91 176 195 / 57%) -6.56%, rgb(27 53 58 / 26%) 115.47%);
-    border: 1.5px solid rgba(85, 198, 208, 0.4);
+    background: linear-gradient(344.23deg, rgba(85, 186, 208, 0.57) -6.56%, rgba(85, 186, 208, 0.26) 115.47%);
+    border: 3px solid rgba(85, 198, 208, 0.4);
     box-shadow: 17px 0px 28px rgba(85, 198, 208, 0.15);
     border-radius: 10px;
     padding: 15px;
@@ -121,24 +143,34 @@ color: #fff;
     position: absolute;
     top: 23px;
     right: 20px;
+    font-size: 30px;
 }
-#page-banner .input-group input,
 #page-banner .input-group .btn-buttom{
-    background:-6.56%, rgb(35 72 80 / 26%);
+    box-shadow: none;
+    color: white;
+    border-right: 2px solid rgba(255, 255, 255, 0.7);
+    width: 10%;
+    display: flex;
+    font-size: 20px;
+}
+#page-banner .input-group .btn-buttom i{
+    position: absolute;
+    top: -2px;
+}
+#page-banner .input-group input{
+    background: rgb(67 152 171 / 0%);
     border: none;
     box-shadow: none;
     color: white;
 }
 #page-banner .input-group ul{
-    background:  rgb(0 0 0 / 26%);
-    padding: 10px;
+    background:  #172932;
+    padding: 20px 10px;
 }
-#page-banner .input-group ul {
-    position: absolute;
-    margin: 0px;
-    inset: 0px auto auto 0px;
-    transform: translate(16px, 56px);  
-}
+#page-banner .input-group ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+  }
 #page-banner .input-group ul li a:hover{
     background:  rgb(120 213 233 / 26%);
     border-radius: 5px;
@@ -146,6 +178,16 @@ color: #fff;
 }
 #page-banner .input-group ul li a{
     color: white;
+    padding: 15px 5px;
+}
+#page-banner .blur{
+    position: absolute;
+    left: 523px;
+    top: 0;
+    width: 501px;
+    height: 450px;
+    background: #01F0FF;
+    filter: blur(312.1px);
 }
 /* ======= */
 #page-home .page-chart .column-hyra{
@@ -200,54 +242,51 @@ color: #fff;
     border: none;
     padding: 13px;
 }
-#page-home .page-chart .column-hyra a{
+#page-home .page-chart a{
     color: #01FFF0;
     text-decoration: none
 }
 #page-home .page-chart .column-hyra .ribbon {
-    width: 135px;
+    width: 155px;
     height: 30px;
     border-top: 16px solid transparent;
     border-left: 25px solid #16353C;
     border-bottom: 16px solid transparent;
-    position: absolute;
-    display: block;
+    position: relative;
     background: #134448;
+    right: 35px;
   }
   #page-home .page-chart .column-hyra .ribbon span{
       position: absolute;
       bottom: -12px;
   }
-  /* #page-home .page-chart .column-hyra  button{
-    background: #1a7f83;
-    } */
-    #page-home .page-chart .column-hyra .btn-blocks{
-      width: 100%;
-      text-align: center;
-      background: #1a7f83;
-    border-radius: 5px;
+    #page-home .page-chart .btn-blocks{
+        width: 100%;
+        background: #1a7f83;
+        border-radius: 5px;
+        box-shadow: none;
+        color: #01FFF0;
+  }
+  #page-home .page-chart .column-hyra .collum-latest{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    width: 100%;
   }
   /* ================page-block=================== */
   #page-block{
     background: #172932;
     color: #fff;
   }
-  #page-block .pagination .page-item .page-link{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
-    border-radius: 5px;
-    border: none;
-    color: #01FFF0;
-}
 #page-block .table{
     background: #16353C;
-    /* border: 2px solid #173943; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     color: #fff;
     padding: 8px;
 }
 #page-block .active{
-    background: rgba(1, 255, 240, 0.1);
+    background: rgb(0 255 240 / 10%);
     border-radius: 10px;
 }
 #page-block tr th,
@@ -257,10 +296,11 @@ color: #fff;
 #page-block tr .text-color{
     color: #01FFF0;
     text-decoration: none;
+    
 }
 #page-block tr {
     border-bottom: 1px solid  #154C54;
-    border-radius: 20px;
+    /* border-radius: 20px !important; */
 }
 #page-block tr span{
     color: #C4C4C4;
@@ -275,12 +315,154 @@ color: #fff;
 #page-block .progress-bar {
     background-color: #01FFF0;
 }
+
+/* show trang & phân trang  */
 .counter{
     border: 1px solid rgba(85, 198, 208, 0.4);
     background: #172932;
     color: white;
-    border-radius: 7px;
+    border-radius: 5px;
 }
+.pagination .page-item .page-link{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 5px;
+    border: none;
+    color: #01FFF0;
+}
+
+/* =======================page-block-transection================= */
+#page-block-transection{
+    background: #172932;
+    color: #fff;
+}
+#page-block-transection .table-blocks{
+    background: #16353C;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+#page-block-transection nav .nav-tabs {
+        border-bottom: 1px solid #154C54;
+}
+#page-block-transection .nav-link{
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+#page-block-transection .nav-tabs .active{
+    background: #16353C;
+    color: #01F0FF;
+    border-bottom: 5px solid #01F0FF;
+}
+#page-block-transection .table-blocks p,
+#page-block-transection .tab-internal p{
+    margin: 0;
+}
+#page-block-transection .table-blocks p i {
+    margin-right: 20px;
+}
+#page-block-transection .table-blocks .boder-symbol{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 4px;
+    font-weight: 800;
+}
+#page-block-transection .table-blocks .boder-text{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 4px;
+    color: #01FFF0;
+}
+#page-block-transection .table-blocks .tab-transection .row{
+    padding: 15px;
+    border-bottom: 1px solid #154C54;
+}
+#page-block-transection .table-blocks .tab-transection .row .ex3 {
+    overflow-y: scroll;
+    background: #172A33;
+    border-radius: 5px;
+    height: 80px;
+    padding: 20px;
+    border: 2px solid #154C54;
+  }
+  #page-block-transection .table-blocks .tab-transection a{
+    color: #01FFF0;
+    text-decoration: none;
+  }
+  #page-block-transection .tab-internal{
+      height: 500px;
+  }
+  /* ======================page-transection====================== */
+    #page-transection{
+    background: #172932;
+    color: #fff;
+  }
+   #page-transection .table-transection{
+    background: #16353C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px;
+  }
+  #page-transection .active{
+    background: rgb(0 255 240 / 10%);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+#page-transection tr p{
+    margin: 0;
+}
+#page-transection tr a{
+    text-decoration: none;
+    color: #01FFF0;
+}
+#page-transection tr th,
+ td{
+    padding: 20px 10px ;
+}
+.text-transection{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 3px;
+    padding: 5px;
+}
+/* ==============contact================= */
+#overview{
+    background: #172932;
+    color: #fff;
+    padding: 50px 0;
+  }
+  #overview .overview-hyra{
+    background: #16353C;
+    border: 3px solid #173943;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    margin-right: 35px;
+  }
+  #overview .overview-hyra p{
+      margin: 0;
+  }
+  #overview .overview-hyra .form-select{
+    background: #102C30 url("../public/img/dropdown.png") no-repeat center right 13px;
+    color: white;
+    border: none;
+    box-shadow: none;
+    padding: 3px 12px;
+}
+#overview .overview-hyra .icon-token{
+    background: #102C30;
+    border-radius: 3px;
+}
+#overview .overview-hyra .title-overview{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #267983;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 82%;
+  }
   /* ===================== FOOTER =================== */
 footer {
     position: relative;

@@ -125,32 +125,29 @@
                   </div>
             </nav>
       </header>
-      <!-- <div class="page-block">
-
-      </div> -->
       <div id="page-banner">
+            <span class="blur"></span>
             <div class="container-lg">
-                  <section class="p-5 ">
-                        <h1>HYRA Chain Testnet Explorer</h1>
-                        <div class="input-group mb-3">
-                              <button class="btn btn-buttom dropdown-toggle text-light" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">All
-                              </button>
-                              <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">All</a></li>
-                                    <li><a class="dropdown-item" href="#">Block</a></li>
-                                    <li><a class="dropdown-item" href="#">Tx</a></li>
-                                    <li><a class="dropdown-item" href="#">Address</a></li>
-                                    <li><a class="dropdown-item" href="#">Token</a></li>
-                                    <li><a class="dropdown-item" href="#">Uncle</a></li>
-                              </ul>
-                              <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                                    placeholder="Search by Address / Txn Hash / Block / Token">
-                              <i class="fa fa-search"></i>
-                        </div>
-                  </section>
+                <section class="p-5 ">
+                    <h1>HYRA Chain Testnet Explorer</h1>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-buttom col-ms-3" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">All<i class="bi bi-chevron-down"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Block</a></li>
+                            <li><a class="dropdown-item" href="#">Tx</a></li>
+                            <li><a class="dropdown-item" href="#">Address</a></li>
+                            <li><a class="dropdown-item" href="#">Token</a></li>
+                            <li><a class="dropdown-item" href="#">Uncle</a></li>
+                        </ul>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                            placeholder="Search by Address / Txn Hash / Block / Token">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </section>
             </div>
-      </div>
+        </div>
       <div id="page-block">
             <div class="container-lg">
                   <section>
@@ -160,7 +157,7 @@
                                     <p>Block <strong> #841921</strong> to <strong> #841925</strong> (Total of <strong>
                                                 1,267,611</strong> blocks)</p>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-4 d-flex align-items-end justify-content-end" style="padding-right: 32px;">
                                     <nav aria-label="Page navigation example">
                                           <ul class="pagination">
                                                 <li class="page-item"><a class="page-link m-1" href="#">First</a></li>
@@ -718,13 +715,7 @@
                                     </tr>
                               </table>
                         </div>
-                        <div class="row
-                        
-                        
-                        
-                        
-                        
-                        ">
+                        <div class="row">
                               <div class="col-md-6">
                                     <p>Show <input type="number" class="counter m-3" name="quantity" min="1" max="99" value="25">Records</p>
                               </div>
@@ -773,9 +764,6 @@
       <script type="text/javascript" src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
       <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
       <script type="text/javascript" src="{{ asset('js/bootstrap5-dropdown-ml-hack.js') }}"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-</body>
+     </body>
 
 </html>
