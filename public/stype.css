@@ -298,10 +298,10 @@ color: #fff;
  td{
     padding: 20px 10px;
 }
-#page-block tr .text-color{
+#page-block .text-color{
     color: #01FFF0;
     text-decoration: none;
-    
+    margin: 0;
 }
 #page-block tr {
     border-bottom: 1px solid  #154C54;
