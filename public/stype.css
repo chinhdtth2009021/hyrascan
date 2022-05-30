@@ -274,6 +274,9 @@ color: #fff;
     height: 500px;
     width: 100%;
   }
+  #page-home .page-chart .table-price{
+      display: flex;
+  }
   /* ================page-block=================== */
   #page-block{
     background: #172932;
@@ -285,6 +288,7 @@ color: #fff;
     border-radius: 10px;
     color: #fff;
     padding: 8px;
+    margin: 0;
 }
 #page-block .active{
     background: rgb(0 255 240 / 10%);
@@ -464,6 +468,10 @@ color: #fff;
     padding: 5px 10px;
     width: 82%;
   }
+  #overview .overview-hyra .border-overview{
+    border-right: 2px solid #154C54;
+    margin-right: 35px;
+}
   /* ===================== FOOTER =================== */
 footer {
     position: relative;
@@ -490,4 +498,60 @@ footer ul li:not(:last-child) {
 footer .copyright {
     padding: 30px 0;
     font-size: 13px;
+}
+/* ===================RESPONSIVE===================== */
+@media (max-width: 1440px) {}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1180px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    #page-home .page-chart .column-hyra .rate-table .badge-red{
+        margin: 5px 0;
+    }
+    #page-banner .blur{
+        left: 170px;
+    }
+}
+
+@media (max-width: 576px) {}
+@media (max-width: 426px) {
+    #page-home .page-chart .column-hyra .rate-table .badge-red{
+        margin: 5px 0;
+    }
+    #page-banner .blur{
+        left: -90px;
+        width: 400px;
+    }
+    #page-home .page-chart .table-price{
+        display: block;
+    }
+    #page-home .page-chart .column-hyra .boder-1{
+        border-right: none;
+        padding: 5px 10px;
+    }
+    #page-home .page-chart .column-hyra .ribbon {
+    position: relative;
+    right: 0;
+    }
+    #page-banner .input-group .btn-buttom{
+    width: initial;
+    }
+    #page-banner .input-group .btn-buttom i{
+    position: relative;
+    left: 10px;
+    top: -7px;
+    }
+    footer ul li:not(:last-child) {
+        margin-right: 25px;
+    }
+    #page-block .table{
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 100%;
+        width: 100%;
+    }
 }
